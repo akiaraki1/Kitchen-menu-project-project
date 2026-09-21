@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню кухни</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <h1>Меню кухни</h1>
+
+        <nav>
+            <button class="filter-btn" data-filter="all">Все блюда</button>
+            <button class="filter-btn" data-filter="soup">Супы</button>
+            <button class="filter-btn" data-filter="salad">Салаты</button>
+            <button class="filter-btn" data-filter="sushi">Суши</button>
+            <button class="filter-btn" data-filter="pizza">Пицца</button>
+            <button class="filter-btn" data-filter="dessert">Десерты</button>
+            <button class="filter-btn" data-filter="drink">Напитки</button>
+        </nav>
+
+    </header>
+
+    <!--  КОНТЕЙНЕР  -->
+    <main class="card-container" >
+
+        <!--  СУПЫ  -->
+        <div class="card" data-category="soup">
+            <img src="image/Рамен с курицей.jpg" alt="Рамен с курицей">
+            <h2 class="title">Рамен с курицей</h2>
+            <p class="description">Насыщенный бульон, яйцо, лапша удон</p>
+            <span class="price">420 ₽</span>
+            <button type="button" class="order-btn" data-name="Рамен с курицей" data-price="420">Заказать</button>
+        </div>
+
+        <div class="card" data-category="soup">
+            <img src="image/Борщ классический.jpg" alt="Борщ классический">
+            <h2 class="title">Борщ классический</h2>
+            <p class="description">Со сметаной и чесночными пампушками</p>
+            <span class="price">320 ₽</span>
+            <button type="button" class="order-btn" data-name="Борщ классический" data-price="320">Заказать</button>
+        </div>
+
+        <div class="card" data-category="soup">
+            <img src="image/Крем-суп из тыквы.jpg" alt="Крем-суп из тыквы">
+            <h2 class="title">Крем-суп из тыквы</h2>
+            <p class="description">Нежный, с тыквенными семечками</p>
+            <span class="price">290 ₽</span>
+            <button type="button" class="order-btn" data-name="Крем-суп из тыквы" data-price="290">Заказать</button>
+        </div>
+
+        <div class="card" data-category="soup">
+            <img src="image/Том Ям.jpg" alt="Том Ям">
+            <h2 class="title">Том Ям</h2>
+            <p class="description">Креветки, кокосовое молоко, лемонграсс</p>
+            <span class="price">490 ₽</span>
+            <button type="button" class="order-btn" data-name="Том Ям" data-price="490">Заказать</button>
+        </div>
+
+        <!--  САЛАТЫ  -->
+        <div class="card" data-category="salad">
+            <img src="image/Цезарь с курицей.jpg" alt="Цезарь с курицей">
+            <h2 class="title">Цезарь с курицей</h2>
+            <p class="description">Курица гриль, черри, пармезан</p>
+            <span class="price">390 ₽</span>
+            <button type="button" class="order-btn" data-name="Цезарь с курицей" data-price="390">Заказать</button>
+        </div>
+
+        <div class="card" data-category="salad">
+            <img src="image/Греческий салат.jpg" alt="Греческий салат">
+            <h2 class="title">Греческий салат</h2>
+            <p class="description">Огурцы, томаты, фета, оливки</p>
+            <span class="price">350 ₽</span>
+            <button type="button" class="order-btn" data-name="Греческий салат" data-price="350">Заказать</button>
+        </div>
+
+        <div class="card" data-category="salad">
+            <img src="image/Оливье классический.jpg" alt="Оливье классический">
+            <h2 class="title">Оливье классический</h2>
+            <p class="description">Колбаса, горошек, свежий огурец</p>
+            <span class="price">280 ₽</span>
+            <button type="button" class="order-btn" data-name="Оливье классический" data-price="280">Заказать</button>
+        </div>
+
+        <!--  СУШИ  -->
+        <div class="card" data-category="sushi">
+            <img src="image/Нигири.jpg" alt="Нигири">
+            <h2 class="title">Нигири</h2>
+            <p class="description">Комочек риса с ломтиком свежего лосося сверху</p>
+            <span class="price">890 ₽</span>
+            <button type="button" class="order-btn" data-name="Нигири" data-price="890">Заказать</button>
+        </div>
+
+        <div class="card" data-category="sushi">
+            <img src="image/Урамаки.jpg" alt="Урамаки">
+            <h2 class="title">Урамаки</h2>
+            <p class="description">Ролл наизнанку: рис снаружи, лосось и сыр внутри</p>
+            <span class="price">590 ₽</span>
+            <button type="button" class="order-btn" data-name="Урамаки" data-price="590">Заказать</button>
+        </div>
+
+        <div class="card" data-category="sushi">
+            <img src="image/Хосомаки.jpg" alt="Хосомаки">
+            <h2 class="title">Хосомаки</h2>
+            <p class="description">Тонкие роллы в обёртке из нори</p>
+            <span class="price">540 ₽</span>
+            <button type="button" class="order-btn" data-name="Хосомаки" data-price="540">Заказать</button>
+        </div>
+
+        <!--  ПИЦЦА  -->
+        <div class="card" data-category="pizza">
+            <img src="image/Пицца Четыре сыра.jpg" alt="Пицца Четыре сыра">
+            <h2 class="title">Пицца Четыре сыра</h2>
+            <p class="description">Моцарелла, дорблю, пармезан, чеддер</p>
+            <span class="price">590 ₽</span>
+            <button type="button" class="order-btn" data-name="Пицца Четыре сыра" data-price="590">Заказать</button>
+        </div>
+
+        <div class="card" data-category="pizza">
+            <img src="image/Пицца Маргарита.jpg" alt="Пицца Маргарита">
+            <h2 class="title">Пицца Маргарита</h2>
+            <p class="description">Томаты, моцарелла, свежий базилик</p>
+            <span class="price">450 ₽</span>
+            <button type="button" class="order-btn" data-name="Пицца Маргарита" data-price="450">Заказать</button>
+        </div>
+
+        <div class="card" data-category="pizza">
+            <img src="image/Пицца Пепперони.jpg" alt="Пицца Пепперони">
+            <h2 class="title">Пицца Пепперони</h2>
+            <p class="description">Пепперони, моцарелла, острый соус</p>
+            <span class="price">520 ₽</span>
+            <button type="button" class="order-btn" data-name="Пицца Пепперони" data-price="520">Заказать</button>
+        </div>
+
+        <!--  ДЕСЕРТЫ  -->
+        <div class="card" data-category="dessert">
+            <img src="image/Чизкейк Нью-Йорк.jpg" alt="Чизкейк Нью-Йорк">
+            <h2 class="title">Чизкейк Нью-Йорк</h2>
+            <p class="description">Классический, с ягодным соусом</p>
+            <span class="price">280 ₽</span>
+            <button type="button" class="order-btn" data-name="Чизкейк Нью-Йорк" data-price="280">Заказать</button>
+        </div>
+
+        <div class="card" data-category="dessert">
+            <img src="image/Тирамису.jpg" alt="Тирамису">
+            <h2 class="title">Тирамису</h2>
+            <p class="description">Маскарпоне, савоярди, какао</p>
+            <span class="price">320 ₽</span>
+            <button type="button" class="order-btn" data-name="Тирамису" data-price="320">Заказать</button>
+        </div>
+
+        <div class="card" data-category="dessert">
+            <img src="image/Мороженое.jpg" alt="Мороженое">
+            <h2 class="title">Мороженое</h2>
+            <p class="description">Три шарика на выбор</p>
+            <span class="price">190 ₽</span>
+            <button type="button" class="order-btn" data-name="Мороженое" data-price="190">Заказать</button>
+        </div>
+
+        <!--  НАПИТКИ  -->
+        <div class="card" data-category="drink">
+            <img src="image/Домашний лимонад.jpg" alt="Домашний лимонад">
+            <h2 class="title">Домашний лимонад</h2>
+            <p class="description">Лайм, мята, газированная вода</p>
+            <span class="price">180 ₽</span>
+            <button type="button" class="order-btn" data-name="Домашний лимонад" data-price="180">Заказать</button>
+        </div>
+
+        <div class="card" data-category="drink">
+            <img src="image/Латте.jpg" alt="Латте">
+            <h2 class="title">Латте</h2>
+            <p class="description">Двойной эспрессо и мягкое молоко</p>
+            <span class="price">220 ₽</span>
+            <button type="button" class="order-btn" data-name="Латте" data-price="220">Заказать</button>
+        </div>
+
+        <div class="card" data-category="drink">
+            <img src="image/Морс клюквенный.jpg" alt="Морс клюквенный">
+            <h2 class="title">Морс клюквенный</h2>
+            <p class="description">Сварен из свежей клюквы</p>
+            <span class="price">150 ₽</span>
+            <button type="button" class="order-btn" data-name="Морс клюквенный" data-price="150">Заказать</button>
+        </div>
+    </main>
+
+    <!--  Корзина  -->
+    <footer>
+        <h2 class="price-title-end">Ваш заказ</h2>
+        <p class="list-of-orders" id="cartText">Пока ничего не заказано</p>
+        <p class="total-amount" id="cartTotal">Итого: 0 ₽</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

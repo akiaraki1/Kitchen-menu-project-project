@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #14161a;
+    font-family: 'Segoe UI', Arial, sans-serif;         
+    padding-bottom: 170px;       
+}
+
+header {
+    background: #1b1e24;
+    padding: 25px 0px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #af4615;
+}
+
+nav {
+    margin: 0px auto;
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter-btn {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    background: #232730;                  
+    color: #f5f0e6;
+    border: 2px solid #3a3f4a;             
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.filter-btn:hover {          
+    border-color: #a0522d;                 
+}
+
+.filter-btn:active {
+    background: #a0522d;                  
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    height: auto;
+    background: #232730;
+    padding: 10px;
+    border-radius: 20px;
+    color: #f8f6f1;             
+}
+
+.card.hidden-card {
+    display: none;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.title, .description {
+    text-align: center;
+    margin: 5px;
+}
+
+span.price {
+    text-align: left;
+}
+
+
+.description {
+    color: #9aa0aa;         
+    height: 40px;     
+}
+
+
+.price {
+    display: inline-block;         
+    background: #a0522d;           
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 18px;              
+    border-radius: 20px;            
+    margin: 10px 0px 15px;          
+}
+
+
+.order-btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px 0px;
+    color: #f8f6f1;
+    background: #a0522d;                
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+.order-btn:hover {
+    background: #8b4513;          
+}
+
+
+.footer {
+    position: fixed;             
+    left: 0;                     
+    bottom: 0;                    
+    background: rgb(27, 30, 36);  
+    border-top: 1px solid #3a3f4a;     
+    border-right: 1px solid #3a3f4a;   
+    border-radius: 0 20px 0 0;    
+    padding: 14px 20px;
+    min-width: 280px;             
+    max-width: 380px;             
+}
+
+.price-title-end {                
+    color: #a0522d;              
+    font-size: 16px;             
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.list-of-orders {                
+    color: #9aa0aa;              
+    font-size: 13px;
+    min-height: 18px;           
+    margin-bottom: 6px;
+}
+
+.total-amount {                   
+    color: #4ade80;             
+    font-size: 17px;
+    font-weight: bold;
+}
